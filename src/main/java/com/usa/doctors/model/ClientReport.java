@@ -1,6 +1,5 @@
 package com.usa.doctors.model;
 
-import ch.qos.logback.core.net.server.Client;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

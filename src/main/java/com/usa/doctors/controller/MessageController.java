@@ -41,9 +41,10 @@ public class MessageController {
         return messageService.update(message);
     }
 
-    @DeleteMapping("/{idClient}")
+    @DeleteMapping("/{idMessage}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public boolean delete(@PathVariable ("idMessage")Integer idMessage){
+    //public boolean delete(@PathVariable ("idMessage")Integer idMessage){
+     public boolean delete(@PathVariable ("idMessage")Integer idMessage){
         return messageService.delete(idMessage);
     }
 

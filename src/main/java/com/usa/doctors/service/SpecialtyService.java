@@ -22,7 +22,7 @@ public class SpecialtyService {
     }
 
     public Specialty save(Specialty specialty) {
-        if (specialty.getId() != null) {
+        if (specialty.getId() == null) {
             return specialtyRepository.save(specialty);
         } else {
             Optional<Specialty> optionalSpecialty = specialtyRepository.getById(specialty.getId());

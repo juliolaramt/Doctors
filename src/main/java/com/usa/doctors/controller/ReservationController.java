@@ -42,7 +42,7 @@ public class ReservationController {
         return reservationService.update(reservation);
     }
 
-    @DeleteMapping("/{idReservacion}")
+    @DeleteMapping("/{idReservation}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable ("idReservation")Integer idReservation){
         return reservationService.delete(idReservation);
@@ -58,7 +58,7 @@ public class ReservationController {
         return reservationService.getReservationPeriod(dateOne, dateTwo);
     }
 
-    @GetMapping ("/{report-clients}")
+    @GetMapping ("/report-clients")
     public List<ClientReport> getClient(){
         return reservationService.getTopClients();
     }

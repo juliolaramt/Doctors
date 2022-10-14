@@ -30,7 +30,7 @@ public class ReservationService {
     }
 
     public Reservation save(Reservation reservation) {
-        if (reservation.getIdReservation() != null) {
+        if (reservation.getIdReservation() == null) {
             return reservationRepository.save(reservation);
         } else {
             Optional<Reservation> optionalReservation = reservationRepository.getById(reservation.getIdReservation());

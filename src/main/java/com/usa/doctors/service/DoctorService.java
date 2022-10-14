@@ -19,7 +19,7 @@ public class DoctorService {
     }
 
     public Doctor save(Doctor doctor){
-        if(doctor.getId()!=null) {
+        if(doctor.getId()==null) {
             return doctorRepository.save(doctor);
         } else {
             Optional<Doctor> optionalDoctor=doctorRepository.getById(doctor.getId());

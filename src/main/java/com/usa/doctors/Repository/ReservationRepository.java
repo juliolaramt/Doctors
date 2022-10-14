@@ -1,7 +1,8 @@
 package com.usa.doctors.Repository;
 
-import ch.qos.logback.core.net.server.Client;
+
 import com.usa.doctors.Repository.CruRepository.ReservationCrudRepository;
+import com.usa.doctors.model.Client;
 import com.usa.doctors.model.ClientReport;
 import com.usa.doctors.model.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
